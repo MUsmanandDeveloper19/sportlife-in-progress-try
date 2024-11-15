@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* navbar-container */
+/* From Uiverse.io by gharsh11032000 */ 
+.menu {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  width: fit-content;
+  display: flex;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.menu .link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  padding: 12px 36px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: goldenrod;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .link svg {
+  width: 14px;
+  height: 14px;
+  fill: #000000;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .item {
+  position: relative;
+}
+
+.menu .item .submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  border-radius: 0 0 16px 16px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+  pointer-events: none;
+  list-style: none;
+}
+
+.menu .item:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+  border-top: transparent;
+  border-color: goldenrod;
+}
+
+.menu .item:hover .link {
+  color: #ffffff;
+  border-radius: 16px 16px 0 0;
+}
+
+.menu .item:hover .link::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.menu .item:hover .link svg {
+  fill: #ffffff;
+  transform: rotate(-180deg);
+}
+
+.submenu .submenu-item {
+  width: 100%;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-link {
+  display: block;
+  padding: 12px 24px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-item:last-child .submenu-link {
+  border-bottom: none;
+}
+
+.submenu .submenu-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  width: 100%;
+  height: 100%;
+  background-color: goldenrod;
+  z-index: -1;
+  transform-origin: left;
+  transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-link:hover:before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.submenu .submenu-link:hover {
+  color: #ffffff;
+}
+
+/* navbar-container */
+
+/* CSS ?? ???? ????? ???? */
+.img-container {
+    position: relative;
+    width: 100%; /* ???? ?????? ???? ??? ???? */
+    height: 83%; /* ???? ?????? ???? ??? ???? */
+    overflow: hidden; /* ??????? ?? ?????? ?? ??? */
+  }
+
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; /* ?????????? ?????? */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* ????-???????????? ????? ????? */
+    opacity: 0; /* ???? ??? ????? ?? ?????? */
+    transition: opacity 0.3s ease; /* ?????????? ?????? */
+  }
+
+  .img-container:hover img {
+    transform: scale(1.1); /* ???? ?? 10% ???? ???? ?? */
+  }
+
+  .img-container:hover .overlay {
+    opacity: 1; /* ????? ?? ?????? */
+  }
+  /* banner-content */
+   #banner-content{
+    font-family: cursive;
+    animation: 2s fade-content linear infinite alternate;
+   }
+   @keyframes fade-content{
+    from{
+      transition: all 34s;
+      opacity: 1;
+    }
+    to{
+      transition: all 34s;
+      opacity: 0;
+    }
+   }
+   /* banner-content */
+
+   /* input */
+/* From Uiverse.io by mrhyddenn */ 
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 180px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #116399, #38caef);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: goldenrod;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #222;
+  padding: 15px 5px 10px 20px;
+  box-shadow: Inset 0 1px 25px rgba(0, 0, 0, 0.55);
+  border-radius: 25px;
+}
+
+.input:focus {
+  border: 2px solid white;
+}
+
+.input::placeholder {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.input:focus::placeholder {
+  color: white;
+}
+   /* input */
+
+/* star-here   */
+#star-here{
+  color: goldenrod;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: 1s fade-content linear infinite alternate;
+}
+@keyframes fade-content{
+  from{
+    transition: all 34s;
+  }
+  to{
+    transition: all 34s;
+    color: white;
+  }
+}
+/* star-here   */
+
+/* Stay-motivated */
+#Stay-motivated{
+  animation: 2s fade-content linear infinite alternate;
+}
+@keyframes fade-content{
+  from{
+    transition: all 34s;
+    color: goldenrod;
+  }
+  to{
+    transition: all 34s;
+    color: white;
+  }
+}
+/* Stay-motivated */

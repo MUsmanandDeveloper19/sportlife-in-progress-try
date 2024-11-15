@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* con-contact-us-btn */
+#con-contact-us-btn{
+    width: 40%;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#con-contact-us-btn-erro{
+    width: 40%;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.erro-btn{
+    width: 37px;
+    height: 37px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    background-color: orange;
+    position: relative;
+    left: -30px;
+}
+/* con-contact-us-btn */
+
+/* con-img-set */
+.con-img-set{
+    border-radius: 12px;
+    position: relative;
+}
+/* con-img-set */
+
+/* con-img-in-section-testimonial */
+.con-img-in-section-testimonial{
+    width: 360px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.836);
+    position: absolute;
+    top: 590px;
+    left: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+    .con-img-in-section-testimonial{
+        position: absolute;
+        top: 460px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .con-img-in-section-testimonial{
+        position: absolute;
+        top: 460px;
+    }
+}
+
+@media screen and (max-width: 984px) {
+    .con-img-in-section-testimonial{
+        position: absolute;
+        top: 545px;
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .con-img-in-section-testimonial{
+        position: absolute;
+        top: 445px;
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .con-img-in-section-testimonial{
+        position: absolute;
+        top: 345px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .con-img-in-section-testimonial{
+        position: absolute;
+        top: 345px;
+        width: 300px;
+    }
+}
+
+    @media screen and (max-width: 402px) {
+        .con-img-in-section-testimonial{
+            position: absolute;
+            top: 245px;
+            width: 300px;
+        }
+        }
+
+    @media screen and (max-width: 402px) {
+        .con-img-in-section-testimonial{
+            position: absolute;
+            top: 245px;
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 370px) {
+        .con-img-in-section-testimonial{
+            width: 270px;
+            position: absolute;
+            top: 245px;
+        }
+    }
+
+    @media screen and (max-width: 370px) {
+        .con-img-in-section-testimonial{
+            width: 250px;
+            position: absolute;
+            top: 220px;
+        }
+    }
+
+
+        @media screen and (max-width: 322px) {
+            .con-img-in-section-testimonial{
+                width: 250px;
+                position: absolute;
+                top: 210px;
+            }   
+
+}
+
+
+
+@media screen and (max-width: 440px) {
+    .con-img-in-section-testimonial-img{
+        height: 60px;
+        width: 60px;
+        border: 1px solid;
+    }
+}
+
+@media screen and (max-width: 369px) {
+    .con-img-in-section-testimonial-img{
+     width: 40px;
+     height: 40px;
+     border: 1px solid;
+     border-radius: 50%;
+    }
+}
+
+
+.con-img-in-section-testimonial-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* con-img-in-section-testimonial */
+
+/* container-man-img-size-set */
+#container-man-img-size-set{
+    height: 400px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 12px;
+    position: relative;
+}
+/* container-man-img-size-set */
+
+/* location+trainer+happy-client */
+.location-trainer-happy-client{
+    width: 170px;
+    height: auto;
+    border: 1px solid;
+    border-radius: 13px;
+    background-color: rgba(0, 0, 0, 0.74);
+    position: absolute;
+    top: 330px;
+    left: 30px;
+}
+/* location+trainer+happy-client */
+
+/* fade-content */
+
+#fade-content{
+    animation: 2s fade-content linear infinite alternate;
+}
+@keyframes fade-content{
+    from{
+        transition: all 34s;
+        opacity: 0;
+    }
+    to{
+        transition: all 34s;
+        opacity: 1;
+    }
+}
+
+/* fade-content */
